@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roaissat Mohamed Zakaria — Software Engineer</title>
+  <meta name="description" content="Software Engineer | Mobile App Developer | AI & Blockchain Enthusiast" />
+  <!-- Tailwind CSS - بدون مسافات -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-on-scroll { opacity: 0; }
+    .hover-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.3);
+    }
+    .hover-button {
+      transition: background 0.3s, transform 0.2s;
+    }
+    .hover-button:hover {
+      transform: translateY(-2px);
+    }
+    .hover-skill {
+      transition: all 0.25s ease;
+    }
+    .hover-skill:hover {
+      background: rgba(37, 99, 235, 0.15);
+      border-color: rgba(37, 99, 235, 0.4);
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(6px);
+      transition: background 0.3s ease;
+    }
+    .glass:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .accent { color: #2563eb; }
+    body { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+  <main class="min-h-screen">
+    <!-- NAV -->
+    <nav class="max-w-5xl mx-auto p-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img 
+          src="https://i.postimg.cc/VsZLdQdM/1762618616.png" 
+          alt="Roaissat Mohamed Zakaria"
+          class="w-10 h-10 rounded-full object-cover border border-gray-700"
+        />
+        <div>
+          <h1 class="text-sm font-semibold">Roaissat Mohamed Zakaria</h1>
+          <p class="text-xs text-gray-400">Software Engineer • Mobile App Developer</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#portfolio" class="text-sm hover:text-blue-400 transition">Work</a>
+        <a href="#skills" class="text-sm hover:text-blue-400 transition">Skills</a>
+        <a href="#contact" class="text-sm hover:text-blue-400 transition">Contact</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="max-w-5xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-3">
+          Hi, I’m <span class="accent">Roaissat Mohamed Zakaria</span> <span class="text-2xl">👋</span>
+        </h2>
+        <p class="text-xl text-gray-300 mb-6">Software Engineer | Mobile App Developer | AI & Blockchain Enthusiast</p>
+        <p class="text-gray-400 mb-6">
+          I’m a passionate developer with strong skills in Flutter, Python, JavaScript, PHP, MySQL, and automation tools like n8n.
+        </p>
+        <div class="flex gap-4">
+          <a href="#portfolio" class="bg-blue-600 hover:bg-blue-500 hover-button transition rounded-lg px-5 py-3 text-white font-medium">View My Work</a>
+          <a href="#contact" class="border border-gray-700 hover:border-blue-500 hover-button transition rounded-lg px-5 py-3 text-gray-200">Contact Me</a>
+        </div>
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-gray-300">
+          <div class="glass p-3 rounded-lg text-center">Location<br><span class="text-gray-400">Algeria</span></div>
+          <div class="glass p-3 rounded-lg text-center">Experience<br><span class="text-gray-400">Freelance & Projects</span></div>
+          <div class="glass p-3 rounded-lg text-center">Availability<br><span class="text-gray-400">Open to work</span></div>
+          <div class="glass p-3 rounded-lg text-center">Languages<br><span class="text-gray-400">EN / AR</span></div>
+        </div>
+      </div>
+
+      <aside class="w-full md:w-96 bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl shadow-lg">
+        <div class="flex flex-col items-center text-center gap-4">
+          <img 
+            src="https://i.postimg.cc/VsZLdQdM/1762618616.png" 
+            alt="Roaissat Mohamed Zakaria"
+            class="w-28 h-28 rounded-full object-cover border-2 border-gray-700 shadow hover:shadow-lg transition duration-300"
+          />
+          <div>
+            <h3 class="text-lg font-semibold">Roaissat Mohamed Zakaria</h3>
+            <p class="text-sm text-gray-400">Software Engineer • App & AI • Blockchain</p>
+          </div>
+          <div class="w-full pt-4 border-t border-gray-800 text-sm">
+            <div class="text-xs text-gray-400">Email</div>
+            <div class="mb-1">roaissatmohamedzakaria@gmail.com</div>
+            <div class="text-xs text-gray-400">Phone</div>
+            <div class="mb-2">+213 698 100 433</div>
+            <a class="text-blue-400 hover:text-blue-300 hover:underline transition text-xs" href="https://www.linkedin.com/in/roaissat-mohamed-zakaria/" target="_blank" rel="noopener">LinkedIn Profile</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="max-w-5xl mx-auto px-6 py-10">
+      <h3 class="text-2xl font-bold mb-6">Technical Skills</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-4 bg-gray-800 rounded-lg text-center hover-skill">Flutter<br><span class="text-gray-400 text-sm">Cross-platform</span></div>
+        <div class="p-4 bg-gray-800 rounded-lg text-center hover-skill">Python<br><span class="text-gray-400 text-sm">AI & Automation</span></div>
+        <div class="p-4 bg-gray-800 rounded-lg text-center hover-skill">JavaScript<br><span class="text-gray-400 text-sm">Frontend & Node.js</span></div>
+        <div class="p-4 bg-gray-800 rounded-lg text-center hover-skill">PHP<br><span class="text-gray-400 text-sm">Backend & APIs</span></div>
+        <div class="p-4 bg-gray-800 rounded-lg text-center hover-skill">MySQL<br><span class="text-gray-400 text-sm">Databases</span></div>
+        <div class="p-4 bg-gray-800 rounded-lg text-center hover-skill">n8n<br><span class="text-gray-400 text-sm">Automation</span></div>
+        <div class="p-4 bg-gray-800 rounded-lg text-center hover-skill">AI<br><span class="text-gray-400 text-sm">ML & NLP</span></div>
+        <div class="p-4 bg-gray-800 rounded-lg text-center hover-skill">Blockchain<br><span class="text-gray-400 text-sm">dApps & Contracts</span></div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="max-w-5xl mx-auto px-6 py-10">
+      <h3 class="text-2xl font-bold mb-6">Featured Projects</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="bg-gray-800 rounded-lg p-5 hover-card">
+          <h4 class="font-semibold mb-2">Auto Booking App (Flutter)</h4>
+          <p class="text-sm text-gray-400 mb-4">Sport venue booking with payments.</p>
+          <div class="flex gap-2">
+            <a class="text-xs px-3 py-2 rounded bg-blue-600 hover:bg-blue-500 hover-button">View Project</a>
+            <a class="text-xs px-3 py-2 rounded border border-gray-600 hover:border-blue-500 hover:text-blue-300 hover-button">Code</a>
+          </div>
+        </article>
+        <article class="bg-gray-800 rounded-lg p-5 hover-card">
+          <h4 class="font-semibold mb-2">BLS Appointment Automation</h4>
+          <p class="text-sm text-gray-400 mb-4">Auto-fill & captcha handling tool.</p>
+          <div class="flex gap-2">
+            <a class="text-xs px-3 py-2 rounded bg-blue-600 hover:bg-blue-500 hover-button">View Project</a>
+            <a class="text-xs px-3 py-2 rounded border border-gray-600 hover:border-blue-500 hover:text-blue-300 hover-button">Code</a>
+          </div>
+        </article>
+        <article class="bg-gray-800 rounded-lg p-5 hover-card">
+          <h4 class="font-semibold mb-2">AI Chatbot Prototype</h4>
+          <p class="text-sm text-gray-400 mb-4">Knowledge-base chatbot.</p>
+          <div class="flex gap-2">
+            <a class="text-xs px-3 py-2 rounded bg-blue-600 hover:bg-blue-500 hover-button">View Project</a>
+            <a class="text-xs px-3 py-2 rounded border border-gray-600 hover:border-blue-500 hover:text-blue-300 hover-button">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <h4 class="font-semibold mb-2">Contact Info</h4>
+          <ul class="space-y-2 text-sm">
+            <li><strong>Email:</strong> <a class="text-blue-400 hover:text-blue-300 hover:underline transition" href="mailto:roaissatmohamedzakaria@gmail.com">roaissatmohamedzakaria@gmail.com</a></li>
+            <li><strong>Alt:</strong> <a class="text-blue-400 hover:text-blue-300 hover:underline transition" href="mailto:zakariaroui7@gmail.com">zakariaroui7@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a class="text-blue-400 hover:text-blue-300 transition" href="tel:+213698100433">+213 698 100 433</a></li>
+            <li><strong>LinkedIn:</strong> <a class="text-blue-400 hover:text-blue-300 hover:underline transition" href="https://www.linkedin.com/in/roaissat-mohamed-zakaria/" target="_blank">Profile</a></li>
+          </ul>
+        </div>
+        <form class="bg-gray-800 p-6 rounded-lg" onsubmit="handleForm(event)">
+          <input required class="w-full mb-3 p-3 rounded bg-gray-900 border border-gray-700 hover:border-blue-500 transition" placeholder="Name" name="name" />
+          <input type="email" required class="w-full mb-3 p-3 rounded bg-gray-900 border border-gray-700 hover:border-blue-500 transition" placeholder="Email" name="email" />
+          <textarea required class="w-full mb-3 p-3 rounded bg-gray-900 border border-gray-700 hover:border-blue-500 transition" placeholder="Message" name="message" rows="4"></textarea>
+          <button class="w-full bg-blue-600 hover:bg-blue-500 hover-button rounded-lg py-3">Send Message</button>
+          <p id="form-note" class="text-xs text-gray-400 mt-3 hidden">Thanks! The message will open your email client.</p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="max-w-5xl mx-auto px-6 py-6 text-center text-sm text-gray-500">
+      © 2025 Roaissat Mohamed Zakaria — All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    // أنميشن عند التمرير
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const delay = parseFloat(el.dataset.delay) || 0;
+          setTimeout(() => {
+            el.style.animation = `fadeInUp 0.6s ease-out forwards`;
+          }, delay * 200);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // تمرير سلس
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // نموذج الاتصال
+    function handleForm(e) {
+      e.preventDefault();
+      const form = new FormData(e.target);
+      const name = encodeURIComponent(form.get('name'));
+      const email = encodeURIComponent(form.get('email'));
+      const message = encodeURIComponent(form.get('message'));
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+      window.location.href = `mailto:roaissatmohamedzakaria@gmail.com?subject=${subject}&body=${body}`;
+      document.getElementById('form-note')?.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
